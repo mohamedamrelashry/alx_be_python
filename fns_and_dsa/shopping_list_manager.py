@@ -10,9 +10,12 @@ def main():
     while True:
         display_menu()
         choice = input("Enter your choice: ")
+         if not(choice.isdigit() and 1 <= int(choice) <= 4):
+            print("Invalid input. Please enter a number between 1 and 4.")
+            display_menu()
 
         if choice == '1':
-            item = int(input("What item do you want to add? "))
+            item = input("What item do you want to add? ")
             shopping_list.append(item)
             pass
         elif choice == '2':
