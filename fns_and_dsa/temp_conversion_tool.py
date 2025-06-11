@@ -8,7 +8,7 @@ def convert_to_fahrenheit(celsius):
     return celsius*CELSIUS_TO_FAHRENHEIT_FACTOR+32
 
 
-temp_input = input("Enter temperature: ")
+temp_input = input("Enter the temperature to convert: ")
 try:
     temp = float(temp_input) 
 except ValueError:
